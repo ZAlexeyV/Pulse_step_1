@@ -16,6 +16,19 @@
 			padding: 0 5px 0 5px;
 		}
 	}
+	.consultation {
+		.title {
+			font-size: 30px;
+			padding: 0 15px 0 15px;
+		}
+		&__descr {
+			padding: 0 15px 0 15px;
+		}
+		.feed-form {
+			padding: 0 15px 0 15px;
+			width: 330px;
+		}
+	}
 }
 @media (max-width: 767px) {
 	.header {
@@ -68,6 +81,19 @@
 		}
 		&__descr {
 			margin-top: 10px;
+		}
+	}
+	.consultation {
+		.title {
+			font-size: 25px;
+			text-align: center;
+		}
+		&__descr {
+			text-align: center;
+		}
+		.feed-form {
+			margin: 0 auto;
+			margin-top: 36px;
 		}
 	}
 }
