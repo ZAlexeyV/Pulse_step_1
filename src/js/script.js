@@ -1,11 +1,11 @@
-var name = "Ivan";
+// var name = "Ivan";
 
-let number = 7;
-const pi = 3.14;
+// let number = 7;
+// const pi = 3.14;
 
-number = 4;
+// number = 4;
 
-let leftBorderWidth;
+// let leftBorderWidth;
 
 // number
 // string - "", '', ``
@@ -63,10 +63,28 @@ console.log(answer); */
 // 	console.log(i);
 // }
 
-function logging(a, b) {
-	console.log( a + b )
-}
+// function logging(a, b) {
+// 	console.log( a + b )
+// }
 
-logging(3, 5);
+// logging(3, 5);
 
-logging(6, 8);
+// logging(6, 8);
+
+$(document).ready(function(){
+	$('.carousel__inner').slick({
+		speed: 1200,
+		// adaptiveHeight: true,
+		prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
+		]
+	  });
+  });
