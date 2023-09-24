@@ -1,3 +1,18 @@
+@media (max-width: 1199px) {
+	.carousel {
+		.container {
+			.prev, .next {
+				left: 0;
+				background-color: transparent;
+			}
+			.next {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}
+
 @media (max-width: 991px) {
 	.header {
 		padding: 0 15px 0 15px;
@@ -5,7 +20,6 @@
 	.promo {
 		&__wrapper {
 			padding: 0 15px 0 15px;
-			
 		}
 	}
 	.advantages {
@@ -29,7 +43,15 @@
 			width: 330px;
 		}
 	}
+	.carousel {
+		&__inner {
+			img {
+				width: 80%;
+			}
+		}
+	}
 }
+
 @media (max-width: 767px) {
 	.header {
 		flex-direction: column;
@@ -95,5 +117,8 @@
 			margin: 0 auto;
 			margin-top: 36px;
 		}
+	}
+	.carousel {
+		padding: 50px 0;
 	}
 }
