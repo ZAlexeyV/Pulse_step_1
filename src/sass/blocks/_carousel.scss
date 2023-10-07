@@ -1,73 +1,24 @@
 .carousel {
 	padding: 81px 0;
-	position: relative;
-	.slide {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	.carousel-inner {
-		// position: relative;
+	&__inner {
+		position: relative;
 		width: 750px;
-		max-height: 527px;
 		margin: 0 auto;
 	}
-	// .prev, .next {
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	transform: translateY(-50%);
-	// 	left: -66px;
-	// 	border: none;
-	// 	background-color: #fff;
-	// 	img {
-	// 		width: 31px;
-	// 		height: 50px;
-	// 	}
-	// }
-	// .next {
-	// 	left: auto;
-	// 	right: -66px;
-	// }
-	// .tns-item {
-	// 	img {
-	// 		display: block;
-	// 		margin: 0 auto;
-	// 	}
-	// }
-	// .tns-nav {    /* Настройка кнопок */
-	// 	position: absolute;
-	// 	left: 50%;
-	// 	transform: translateX(-50%);
-	// 	bottom: 5px;
-	// 	z-index: 1;
-	// 	button {
-	// 		background-color: red;
-	// 		margin-left: 10px;
-	// 	}
-	// 	button:first-child {
-	// 		margin-left: 0;
-	// 	}
-	// 	.tns-nav-active {
-	// 		background-color: blue;
-	// 		width: 21px;
-	// 		height: 11px;
-	// 		border-radius: 50%;
-	// 		transform: translateY(25%);
-	// 	}
-	// }
-	.carousel-control-prev, .carousel-control-next {
-		left: -66px;
-	}
-		.carousel-control-next {
-			left: auto;
-			right: -66px;
-		}
-	.carousel-control-prev-icon, .carousel-control-next-icon {
+	.slick-prev, .slick-next  {
 		position: absolute;
-		background-image: url(../icons/left.svg);
-		width: 31px;
-		height: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -66px;
+		border: none;
+		background-color: #fff;
+		img {
+			width: 31px;
+			height: 50px;
+		}
 	}
-	.carousel-control-next-icon {
-		background-image: url(../icons/right.svg);
+	.slick-next  {
+		right: -66px;
+		left: auto;
 	}
 }
